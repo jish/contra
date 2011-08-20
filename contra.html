@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contra</title>
+  </head>
+
+  <body>
+
+    <script src="contra.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+
+      Contra.addHandler(function() {
+        var body = document.getElementsByTagName('body')[0];
+        var snowman = document.createElement('div');
+
+        snowman.innerHTML = '☃';
+        snowman.style.fontSize = '5em';
+        body.appendChild(snowman);
+      })
+
+    </script>
+
+  </body>
+</html>
