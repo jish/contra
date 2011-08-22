@@ -23,6 +23,9 @@
   }
 
   Contra.win = function() {
+    var body = document.getElementsByTagName('body')[0];
+    body.className = body.className + ' contra';
+
     for(var i = 0, l = handlers.length; i<l; i++) {
       handlers[i].call();
     }
