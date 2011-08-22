@@ -7,7 +7,15 @@
 
   <body>
 
-    <script src="contra.js" type="text/javascript" charset="utf-8"></script>
+    <p>We can execute arbitrary javascript functions when the Contra code is entered correctly:</p>
+
+    <pre><code>
+      Contra.addHandler(function() {
+        // show a snowman
+      });
+    </code></pre>
+
+    <script src="../contra.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
 
       Contra.addHandler(function() {
@@ -17,7 +25,7 @@
         snowman.innerHTML = '☃';
         snowman.style.fontSize = '5em';
         body.appendChild(snowman);
-      })
+      });
 
     </script>
 
