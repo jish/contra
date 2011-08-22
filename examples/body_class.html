@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Class</title>
+
+    <style type="text/css" media="screen">
+
+      /*
+        Styles beginning with `body.contra` will be applied after the
+        Contra code is entered correctly.
+      */
+      body.contra p {
+        color: red;
+      }
+
+      /*
+        Here we hide some elements by default.
+        Then use the `body.contra` selector to display them once the
+        Contra code is enterd correctly.
+      */
+      .contra_hidden {
+        display: none;
+      }
+
+      body.contra .contra_hidden {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="contra_hidden">Contra code entered successfully!</div>
+
+    <p>When the Contra code is entered on this page a <code>contra</code> class will be applied to the body.</p>
+
+    <p>With some pre-defined css styles, we can alter the way the page looks.</p>
+
+    <pre><code>
+      &lt;style type="text/css" media="screen"&gt;
+        body.contra p {
+          color: red;
+        }
+      &lt;style&gt;
+
+      &lt;script src="contra.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+    </code></pre>
+
+    <script src="../contra.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+</html>
