@@ -1,4 +1,3 @@
-
 Add the Contra (Konami) code to any website.
 
 All you have to do is include the `contra.js` script:
@@ -18,3 +17,5 @@ Or you can add your own javascript handlers and the possibilities are endless:
     Contra.addHandler(function() {
       // Awesome things here
     });
+
+This is Darren showing off ... please throw this away.
