@@ -34,7 +34,9 @@
   Contra.initialize = function() {
     if (document.addEventListener) {
       document.addEventListener('keyup', Contra.check);
-    }
+    } else if(document.attachEvent) {
+      document.attachEvent('onkeypress', Contra.check);
+	}
   }
 
   Contra.addHandler = function(handler) {
