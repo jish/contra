@@ -9,7 +9,7 @@
   var pattern = [up, up, down, down, left, right, left, right, b, a];
   var position = 0;
 
-  Contra.check = function(evt) {
+  var check = function(evt) {
     if (pattern[position] === evt.keyCode) {
       position++;
     } else {
@@ -17,12 +17,12 @@
     }
 
     if (position === pattern.length) {
-      Contra.win();
+      win();
       position = 0;
     }
   };
 
-  Contra.win = function() {
+  var win = function() {
     var body = document.getElementsByTagName('body')[0];
     body.className = body.className + ' contra';
 
@@ -31,11 +31,11 @@
     }
   };
 
-  Contra.initialize = function() {
+  var initialize = function() {
     if (document.addEventListener) {
-      document.addEventListener('keyup', Contra.check);
+      document.addEventListener('keyup', check);
     } else if (document.attachEvent) {
-      document.attachEvent('onkeypress', Contra.check);
+      document.attachEvent('onkeypress', check);
     }
   };
 
@@ -43,6 +43,6 @@
     handlers.push(handler);
   };
 
-  Contra.initialize();
+  initialize();
 
 }(this));
