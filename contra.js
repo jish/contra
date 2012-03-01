@@ -20,7 +20,7 @@
       Contra.win();
       position = 0;
     }
-  }
+  };
 
   Contra.win = function() {
     var body = document.getElementsByTagName('body')[0];
@@ -29,19 +29,19 @@
     for(var i = 0, l = handlers.length; i<l; i++) {
       handlers[i].call();
     }
-  }
+  };
 
   Contra.initialize = function() {
     if (document.addEventListener) {
       document.addEventListener('keyup', Contra.check);
-    } else if(document.attachEvent) {
+    } else if (document.attachEvent) {
       document.attachEvent('onkeypress', Contra.check);
-	}
-  }
+    }
+  };
 
   Contra.addHandler = function(handler) {
     handlers.push(handler);
-  }
+  };
 
   Contra.initialize();
 
