@@ -39,7 +39,7 @@
     }
   };
 
-  Contra.addHandler = function(handler) {
+  Contra.addHandler = (handler) => {
     handlers.push(handler);
   };
 

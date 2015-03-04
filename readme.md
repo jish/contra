@@ -18,3 +18,12 @@ Or you can add your own javascript handlers and the possibilities are endless:
     Contra.addHandler(function() {
       // Awesome things here
     });
+
+### Develop
+
+    $ npm install
+    $ npm install -g broccoli-cli
+
+### Build
+
+    $ broccoli build dist
