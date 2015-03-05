@@ -45,4 +45,4 @@
 
   initialize();
 
-}(this));
+}(window));
